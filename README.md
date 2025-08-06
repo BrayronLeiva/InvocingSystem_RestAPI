@@ -1,4 +1,4 @@
-# 📦 Billing System - REST API
+# Billing System - REST API
 
 This project is a RESTful application built with **Spring Boot** to manage a billing system. It includes client, product, invoice, supplier management, and more.
 
@@ -12,22 +12,24 @@ This project is a RESTful application built with **Spring Boot** to manage a bil
 
 
 
-## 🏗️ Project Structure
+## Project Structure
+
+```
 InvocingSystem_RestAPI-EstebanNUEVA/
 ├── src/
-│ ├── main/
-│ │ ├── java/com/example/proyecto_2_progra_4/
-│ │ │ ├── data/ # JPA Repositories
-│ │ │ ├── logic/DTOEntities/ # DTO Objects
-│ │ │ ├── logic/Entities/ # Model Entities
-│ │ │ ├── presentation/Controllers/ # REST Controllers
-│ │ │ ├── Proyecto2Progra4Application.java # Main class
-│ │ │ ├── WebConfig.java # Web Configuration
-├── pom.xml # Maven Configuration
+│   ├── main/
+│   │   ├── java/com/example/proyecto_2_progra_4/
+│   │   │   ├── data/                  # Repositorios JPA
+│   │   │   ├── logic/DTOEntities/     # Objetos DTO
+│   │   │   ├── logic/Entities/        # Entidades del modelo
+│   │   │   ├── presentation/Controllers/  # Controladores REST
+│   │   │   ├── Proyecto2Progra4Application.java  # Clase principal
+│   │   │   ├── WebConfig.java         # Configuración web
+├── pom.xml                            # Configuración Maven
+```
 
 
-
-## 🧠 Project Layers
+## Project Layers
 
 ### 📁 `Entities`
 Contains JPA classes representing database tables:
@@ -37,7 +39,7 @@ Contains JPA classes representing database tables:
 - `Proveedores.java` (Suppliers)
 - `Detalle_Factura.java` (Invoice Details)
 
-### 📁 `DTOEntities`
+### `DTOEntities`
 DTOs used to transport data to/from controllers:
 - `ClientesDTO`
 - `FacturasDTO`
@@ -45,7 +47,7 @@ DTOs used to transport data to/from controllers:
 - `ProveedoresDTO`
 - `Detalle_FacturaDTO`
 
-### 📁 `data`
+### `data`
 Repository interfaces extending `JpaRepository`:
 - `ClienteRepository`
 - `FacturaRepository`
@@ -53,7 +55,7 @@ Repository interfaces extending `JpaRepository`:
 - `ProveedorRepository`
 - `DetalleFacturaRepository`
 
-### 📁 `Controllers`
+### `Controllers`
 REST Controllers:
 - `AdminController`
 - `ClienteController` (Client)
@@ -64,9 +66,9 @@ REST Controllers:
 
 ---
 
-## 🌐 Main REST Endpoints
+## Main REST Endpoints
 
-> ⚠️ Exact endpoints may vary based on annotations. Check files in `presentation/Controllers/` for details.
+> Exact endpoints may vary based on annotations. Check files in `presentation/Controllers/` for details.
 
 Typical examples you might find:
 
